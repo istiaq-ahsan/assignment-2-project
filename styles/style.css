@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@100..900&display=swap');
+
+/* font-family: "Herr Von Muellerhoff", cursive; */
+* {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+
+}
+
+.front {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+}
+
+.head2>nav>label {
+    display: none;
+}
+
+.heading h3 {
+    font-size: 1.7rem;
+    color: red;
+}
+
+.heading-elements {
+    margin: 0 auto 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    align-items: center;
+}
+
+.menu {
+    /* border: 1px solid white; */
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu ul {
+    border: 1px solid white;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 30px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    /* margin-right: 25px; */
+    align-items: center;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+
+}
+
+.btn-menu {
+    background-color: #E6533C;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.front-main {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+    height: auto;
+}
+
+.span {
+    font-family: "Herr Von Muellerhoff", cursive;
+
+}
+
+.front-left {
+    height: auto;
+    width: 60%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-left>h1 {
+    font-size: 4rem;
+}
+
+.front-left>p {
+    font-size: 1rem;
+    background-color: black;
+}
+
+.front-right {
+    background-image: url(../images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 40%;
+    height: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: #E6533C;
+    width: 224px;
+    height: 54px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#btn-second {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#btn-second:hover {
+    background-color: #E6533C;
+    color: white;
+}
+
+.class1 {
+    height: fit-content;
+    width: 200px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    margin-top: 200px;
+    margin-left: 300px;
+    background-color: rgba(34, 34, 34, 0.75)
+}
+
+.class2 {
+    height: fit-content;
+    max-width: 200px;
+    width: 100%;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    margin-top: 200px;
+    background-color: rgba(34, 34, 34, 0.75);
+}
+
+
+#class1>h1,
+p {
+    padding-left: 20px;
+    background-color: rgba(34, 34, 34, 0.75)
+}
+
+#class2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 0.75);
+}
+
+.class2-des {
+    background-color: rgba(34, 34, 34, 0.75)
+}
+
+.class2-des>h1 {
+    background-color: rgba(34, 34, 34, 0.75)
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .front {}
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .front-main {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        /* margin-left: 35px;
+        margin-right: 35px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .front-left {
+        width: 100%;
+
+    }
+
+    .front-right {
+        width: 100%;
+        background-position: ;
+        height: 700px;
+    }
+
+    .class2 {
+        margin-bottom: 550px;
+
+    }
+
+    .class1 {
+        margin-top: 100px;
+        margin-left: 180px;
+    }
+
+    .btn-primary {
+        width: 180px;
+        height: 40px;
+    }
+
+    .heading,
+    .menu {
+        display: none;
+    }
+
+    .head2 {
+        /* border: 1px solid white; */
+    }
+
+    .head2 nav label {
+        visibility: visible;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 200px;
+        color: white;
+    }
+
+    .head2 nav label h3 {
+        font-size: 1.7rem;
+        color: red;
+    }
+}
