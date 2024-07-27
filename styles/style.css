@@ -8,6 +8,10 @@
     color: white;
 }
 
+div>p {
+    color: #ffffff80;
+}
+
 body {
     font-family: "Inter", sans-serif;
     max-width: 1440px;
@@ -18,6 +22,7 @@ body {
     width: 100%;
     height: auto;
     border: 1px solid white;
+    /* background-image: linear-gradient(to right, black, white 400px, black 800px); */
 }
 
 .head2>nav>label {
@@ -188,8 +193,115 @@ p {
     background-color: #E6533C;
 }
 
+/* second section design */
+.second {
+    width: 80%;
+    height: auto;
+    margin: 100px auto 100px auto;
+    border: 1px solid white;
+}
+
+.h-descrip,
+.habit-element>p {
+    background-color: black;
+}
+
+.habit-elements-one {
+    text-align: center;
+}
+
+.h-heading,
+.r-heading {
+    font-size: 2.5rem;
+
+}
+
+.h-descrip,
+.r-descrip,
+.habit-element>p {
+    font-size: 1rem;
+}
+
+.habit-elements-two {
+    margin: 50px auto 10px auto;
+    display: inline-flex;
+    gap: 30px;
+    padding-left: 30px;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.habit-element {
+    height: 290px;
+    width: 225px;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 1px solid white; */
+    text-align: center;
+
+}
+
+.habit-element>img {
+    border-radius: 50%;
+}
+
+/* third section design */
+.third,
+.run,
+.run-elements,
+.r-heading,
+.r-btn {
+    background: #222222;
+}
+
+.third {
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    margin: 0 auto 100px auto;
+    border-radius: 10px;
 
 
+}
+
+.run {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    border-radius: 10px;
+
+}
+
+#run-elements-one {
+    display: flex;
+    flex-direction: column;
+}
+
+#run-elements-one>h1,
+.r-btn {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.run-elements>img {
+    height: 300px;
+    width: 312px;
+    object-fit: fill;
+    object-position: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* fourth section design */
+.fourth {
+    margin: 50px auto 50px auto;
+    height: 170px;
+    width: 50%;
+    border: 1px solid white;
+}
 
 @media screen and (max-width:576px) {
     .front {}
@@ -255,5 +367,57 @@ p {
     .head2 nav label h3 {
         font-size: 1.7rem;
         color: red;
+    }
+
+    /* second section design */
+    .second {
+        width: 90%;
+        height: auto;
+    }
+
+    .habit-elements-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+
+    }
+
+    /* .habit-element {
+        height: auto;
+        width: 150px;
+
+    }
+
+    .habit-element>img {
+        height: 100px;
+        width: 100px;
+    } */
+
+    /* third section design */
+
+    .run {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .run-elements>img {
+        object-fit: fill;
+        object-position: 50%;
+        margin: 0;
+        width: 287px;
+        height: 170px;
+
+    }
+
+    .r-btn {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #run-btn {
+        width: 300px;
     }
 }
