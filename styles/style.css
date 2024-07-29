@@ -202,7 +202,8 @@ p {
 }
 
 .h-descrip,
-.habit-element>p {
+.habit-element>p,
+.f-descrip {
     background-color: black;
 }
 
@@ -211,14 +212,16 @@ p {
 }
 
 .h-heading,
-.r-heading {
+.r-heading,
+.f-heading {
     font-size: 2.5rem;
 
 }
 
 .h-descrip,
 .r-descrip,
-.habit-element>p {
+.habit-element>p,
+.f-descrip {
     font-size: 1rem;
 }
 
@@ -251,7 +254,24 @@ p {
 .run,
 .run-elements,
 .r-heading,
-.r-btn {
+.r-btn,
+.fifth,
+.fifth-element,
+.fifth-h1,
+.fifth-table,
+.seventh,
+.seventh-element,
+.seventh-elements,
+.footer,
+.footer-elements,
+.footer-element,
+.footer-end {
+    background: #222222;
+}
+
+.footer-element>h3,
+.foot-head,
+.foot-i {
     background: #222222;
 }
 
@@ -296,11 +316,149 @@ p {
 }
 
 /* fourth section design */
-.fourth {
+.fourth,
+.sixth {
     margin: 50px auto 50px auto;
-    height: 170px;
+    height: auto;
     width: 50%;
     border: 1px solid white;
+}
+
+.f-heading {
+    margin-left: 15px;
+}
+
+/* fifth section design */
+.fifth {
+    max-width: 1440px;
+    width: 100%;
+    height: 650px;
+    border: 1px solid white;
+    margin-top: 100px;
+}
+
+.fifth-elements {
+    display: flex;
+}
+
+.fifth-element-one {
+    width: 40%;
+    border: 1px solid white;
+}
+
+.fifth-element-two {
+    width: 60%;
+    border: 1px solid white;
+}
+
+.fifth-table {
+    text-align: center;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* sixth section design */
+.sixth {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* seventh section design */
+.seventh {
+    max-width: 1440px;
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin: 100px auto 100px auto;
+
+}
+
+.seventh-elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px;
+}
+
+.seventh-element,
+.seventh-element>img {
+    width: 315px;
+    height: 272px;
+    /* border: 1px solid white; */
+    border-radius: 18px;
+
+}
+
+.seventh-element {
+    position: relative;
+
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+
+}
+
+.bottom-left,
+.bottom-left>h3,
+p {
+    background: transparent !important;
+}
+
+.bottom-left>h3 {
+    margin-left: 15px;
+}
+
+/* footer section design */
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 489px;
+    margin: 0;
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding-top: 50px;
+}
+
+.footer-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-head {
+    font-size: 60px;
+    color: #E6533C;
+    margin-left: 15px;
+}
+
+.foot-descrip {
+    font-size: 14px;
+}
+
+.footer-element>h3 {
+    margin-left: 15px;
+}
+
+.line {
+    width: 70%;
+    background-color: #ffffff80;
+    margin-top: 50px;
+}
+
+.footer-end {
+    margin-top: 30px;
 }
 
 @media screen and (max-width:576px) {
@@ -338,7 +496,7 @@ p {
 
     .class1 {
         margin-top: 100px;
-        margin-left: 180px;
+        margin-left: 160px;
     }
 
     .btn-primary {
@@ -419,5 +577,19 @@ p {
 
     #run-btn {
         width: 300px;
+    }
+
+    .third {
+        width: 90%;
+    }
+
+    .run-elements>img {
+        width: 320px;
+    }
+
+    .fourth {
+
+        width: 90%;
+
     }
 }
