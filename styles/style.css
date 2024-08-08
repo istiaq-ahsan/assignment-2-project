@@ -257,6 +257,8 @@ p {
 .r-btn,
 .fifth,
 .fifth-element,
+.fifth-element-one,
+.fifth-element-two,
 .fifth-h1,
 .fifth-table,
 .seventh,
@@ -332,7 +334,7 @@ p {
 .fifth {
     max-width: 1440px;
     width: 100%;
-    height: 650px;
+    height: auto;
     border: 1px solid white;
     margin-top: 100px;
 }
@@ -342,22 +344,104 @@ p {
 }
 
 .fifth-element-one {
-    width: 40%;
-    border: 1px solid white;
+    width: 45%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .fifth-element-two {
-    width: 60%;
-    border: 1px solid white;
+    width: 55%;
+    /* border: 1px solid white; */
+}
+
+.fifth-h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px 0 0 -70px;
 }
 
 .fifth-table {
-    text-align: center;
+    text-align: left;
+
+}
+
+table {
+    margin: 50px 50px;
+    border-collapse: collapse;
+    background: transparent !important;
+}
+
+td,
+th {
+    border: 2px solid #ffffff1f;
+    padding: 10px 20px;
+    background: #222222;
+    color: #ffffff80;
+}
+
+th {
+    color: white;
+}
+
+/* .fifth-element-two {
+    margin-top: 50px;
+} */
+.fifth-element-top {
+    background-color: #222222;
+}
+
+.fi-heading {
+    font-size: 2rem;
+    margin-top: 50px;
+    background-color: #222222;
+}
+
+.fi-descrip {
+    margin-left: -20px;
 }
 
 .input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #222222;
+    margin-right: 150px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+input::placeholder {
+    color: #ffffff80;
+    padding-left: 1rem;
+}
+
+#select {
+    color: #ffffff80;
+}
+
+.box-one {
+    height: 45px;
+    width: 280px;
+    /* padding-right: 30px; */
+    background-color: #ffffff1f;
+    border: none;
+    border-radius: 10px;
+    margin-right: -400px;
+}
+
+#box-two {
+    width: 575px;
+    color: #ffffff80;
+}
+
+.fi-btn {
+    background-color: #222222;
+    margin-bottom: 40px;
 }
 
 /* sixth section design */

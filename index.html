@@ -131,7 +131,7 @@
                 <div class="fifth-element-one">
                     <div class="fifth-h1">BMI Calculator Chart</div>
                     <div class="fifth-table">
-                        <table class="table" border="1">
+                        <table class="table">
                             <tr>
                                 <th>BMI</th>
                                 <th>Weight Status</th>
@@ -157,19 +157,29 @@
                     </div>
                 </div>
                 <div class="fifth-element-two">
-                    <div class="">
+                    <div class="fifth-element-top">
                         <h1 class="fi-heading">Calculate your BMI</h1>
                         <p class="fi-descrip">We believe fitness should be accessible to everyone, everywhere,
                             regardless of income or access to a gym. </p>
                     </div>
                     <div class="input">
-                        <input type="text" name="" id="" placeholder="Height/cm">
-                        <input type="text" name="" id="" placeholder="Weight/kg">
-                        <input type="text" name="" id="" placeholder="Age">
-                        <input type="text" name="" id="" placeholder=" Sex">
-                        <input type="text" name="" id="" placeholder="Select an activity factor">
+                        <input type="text" name="" class="box-one" placeholder="Height/cm">
+                        <input type="text" name="" class="box-one" placeholder="Weight/kg">
+                        <input type="text" name="" class="box-one" placeholder="Age">
+                        <!-- <input type="text" name="" class="box-one" placeholder=" Sex"> -->
+                        <select name="" class="box-one" id="select">
+                            <option value="">Sex</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                        <!-- <input type="text" name="" class="box-one" id="box-two" placeholder="Select an activity factor"> -->
+                        <select name="" class="box-one" id="box-two">
+                            <option value="">Select an activity factor</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
                     </div>
-                    <div class=fi-btn>
+                    <div class="fi-btn">
                         <button class="btn-primary">Calculate</button>
                     </div>
                 </div>
