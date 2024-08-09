@@ -18,11 +18,26 @@ body {
 
 }
 
+/* .heading,
+.heading>h3,
+.heading>i,
+.heading-elements,
+.menu,
+.front-main,
+.front-left,
+.front-left>h1,
+.span,
+.front-btn {
+    background: transparent !important;
+} */
+
+
 .front {
     width: 100%;
     height: auto;
-    border: 1px solid white;
-    /* background-image: linear-gradient(to right, black, white 400px, black 800px); */
+    /* border: 1px solid white; */
+    /* background-image: linear-gradient(to bottom, #000000, #434343, #000000); */
+
 }
 
 .head2>nav>label {
@@ -30,8 +45,10 @@ body {
 }
 
 .heading h3 {
-    font-size: 1.7rem;
-    color: red;
+    font-size: 1.8rem;
+    color: #E6533C;
+    margin-left: 50px;
+
 }
 
 .heading-elements {
@@ -42,6 +59,7 @@ body {
     justify-content: space-between;
     /* border: 2px solid white; */
     align-items: center;
+
 }
 
 .menu {
@@ -103,6 +121,7 @@ body {
 
 .front-left>h1 {
     font-size: 4rem;
+    margin-left: -100px;
 }
 
 .front-left>p {
@@ -198,7 +217,7 @@ p {
     width: 80%;
     height: auto;
     margin: 100px auto 100px auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .h-descrip,
@@ -280,7 +299,7 @@ p {
 .third {
     width: 80%;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 0 auto 100px auto;
     border-radius: 10px;
 
@@ -291,7 +310,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 190px;
     border-radius: 10px;
 
 }
@@ -315,6 +334,7 @@ p {
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 /* fourth section design */
@@ -323,7 +343,7 @@ p {
     margin: 50px auto 50px auto;
     height: auto;
     width: 50%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .f-heading {
@@ -335,7 +355,7 @@ p {
     max-width: 1440px;
     width: 100%;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 100px;
 }
 
@@ -359,9 +379,9 @@ p {
 }
 
 .fifth-h1 {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 50px 0 0 -70px;
+    margin: 10px 0 0 -10px;
 }
 
 .fifth-table {
@@ -396,7 +416,7 @@ th {
 
 .fi-heading {
     font-size: 2rem;
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: #222222;
 }
 
@@ -422,6 +442,7 @@ input::placeholder {
 
 #select {
     color: #ffffff80;
+    padding-left: 1rem;
 }
 
 .box-one {
@@ -437,6 +458,7 @@ input::placeholder {
 #box-two {
     width: 575px;
     color: #ffffff80;
+    padding-left: 1rem;
 }
 
 .fi-btn {
@@ -455,7 +477,7 @@ input::placeholder {
     max-width: 1440px;
     width: 80%;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 12px;
     margin: 100px auto 100px auto;
 
@@ -466,6 +488,7 @@ input::placeholder {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 30px;
+    padding-bottom: 40px;
 }
 
 .seventh-element,
@@ -474,13 +497,16 @@ input::placeholder {
     height: 272px;
     /* border: 1px solid white; */
     border-radius: 18px;
-
 }
 
 .seventh-element {
     position: relative;
 
     color: white;
+}
+
+.seventh-element>img {
+    margin-top: 20px;
 }
 
 .bottom-left {
@@ -565,6 +591,10 @@ p {
     .front-left {
         width: 100%;
 
+    }
+
+    .front-left>h1 {
+        margin-left: -10px;
     }
 
     .front-right {
@@ -675,5 +705,106 @@ p {
 
         width: 90%;
 
+    }
+
+    /* fifth page design */
+    .fifth {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table {
+        margin-left: 20px;
+    }
+
+    .fifth-h1 {
+        margin-right: 30px;
+    }
+
+    .fifth-elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fifth-element-one {
+        width: 100%;
+    }
+
+    .fifth-element-two {
+        width: calc(100% - 20px);
+        padding-left: 20px;
+    }
+
+
+
+    .box-one {
+        width: 180px;
+        margin-right: -190px;
+    }
+
+    #box-two {
+        width: 375px;
+
+    }
+
+    /* sixth page design */
+    .sixth {
+        width: 80%;
+    }
+
+    /* seventh page design */
+    .seventh-elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seventh-element,
+    .seventh-element>img {
+        width: 270px;
+        height: 270px;
+        /* border: 1px solid white; */
+        border-radius: 18px;
+
+    }
+
+    /* footer design */
+
+
+    .footer-elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        gap: 10px;
+
+    }
+
+    .footer-element {
+        text-align: left;
+    }
+
+
+
+    .foot-descrip {
+
+        width: 90%;
+    }
+
+    .footer-element>h3 {
+        margin-left: 20px;
+    }
+
+    .line {
+        width: 70%;
+        background-color: #ffffff1f;
+        margin-top: 50px;
+    }
+
+    .footer-end {
+        margin-top: 0px;
+    }
+
+    .last-p {
+        background-color: #ffffff80;
     }
 }
